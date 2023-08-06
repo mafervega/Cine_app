@@ -1,0 +1,64 @@
+.detail{
+    margin: 4rem;
+    display: flex;
+    justify-content: space-around;
+
+.peli{
+    width: 30%;
+    .peli_info{
+        display: flex;
+        align-items: center;
+    }
+    img{
+        width: 50%;
+        border-radius: 2rem;
+    }
+    h2{
+        margin-left: 1rem;
+    }
+    span{
+        color: #888585; /* Color del texto */
+    }
+    
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   span{
+    color: #888585; 
+   }
+
+.horario_info{
+    display: flex;
+    justify-content: space-around;
+    margin: 1.5rem;  
+  button{
+    padding: 0 12px; 
+    font-family: Roboto; 
+    font-size: 18px; 
+    color: rgb(2, 95, 255); 
+    background: #fff; 
+    border-radius: 4px; 
+    border-width: 1px; 
+  }
+}
+
+.seleccion_info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        border-radius: 2rem;
+        padding: 0 12px; 
+        font-family: Roboto; 
+        font-size: 18px; 
+        color: rgb(17, 18, 20); 
+        background: #fff; 
+        border-width: 1px;       
+    }
+}
+}
+
+}

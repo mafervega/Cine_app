@@ -1,0 +1,24 @@
+.col{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.card{
+    width: 250px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    border-radius: 5%;
+}
+img{
+    width: 100%;
+    border-radius: 5%;
+}
+.card-boby{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h6{
+        margin-top: 0.5rem;
+    }
+}
