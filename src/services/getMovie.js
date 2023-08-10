@@ -18,7 +18,6 @@ export const getMovie = async (idMovie) => {
 }
 
 export const getMovies = async () => {
-
     try 
     {
         const {data} = await axios.get(URL_API_ALL);
@@ -29,6 +28,35 @@ export const getMovies = async () => {
     {
         return error;
     }
+}
+export const getBoletos = async (idMovie) =>{
+
+    try 
+    {
+        const {data} = await axios.get(`https://api.themoviedb.org/3/movie/${idMovie}?api_key=2a75c94ca686f0408a8bac694a539587`);
+        
+        return data;    
+    } 
+    catch (error) 
+    {
+        return error;
+    }
 
 
 }
+export const getSillas = async (idMovie) =>{
+
+    try 
+    {
+        const {data} = await axios.get(`https://api.themoviedb.org/3/movie/${idMovie}?api_key=2a75c94ca686f0408a8bac694a539587`);
+        
+        return data;    
+    } 
+    catch (error) 
+    {
+        return error;
+    }
+
+
+}
+

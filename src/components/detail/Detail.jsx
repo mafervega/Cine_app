@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
-import { getMovie } from "../../services/getMovie"
+import { useNavigate, useParams } from "react-router-dom"
+import { getMovie,} from "../../services/getMovie"
 import './style.scss'
 
 
@@ -17,6 +17,9 @@ const Detail = () => {
         }
         getInfo()
     }, [idMovie])
+    
+    const navigate = useNavigate()
+    
 
 
   return (
@@ -29,7 +32,10 @@ const Detail = () => {
                 <span>{info.original_title}</span>
                </div>
             </div>
-        <h5>Trailer</h5>
+            <div className="trailers">
+        <h5>Trailer:</h5>
+      <span></span>
+          </div>
         <br />
         <h5>Sinopsis:</h5> 
         <span>{info.overview}</span>
@@ -45,8 +51,9 @@ const Detail = () => {
                  <button >17:00</button>
                  <button >19:00</button>           
              </div> 
-             <div className="seleccion_info">
-             <button>Seleccionar boletos </button>
+
+             <div  onClick={()=>{navigate(`${info.id}`)}} className="seleccion_info">
+             <button >Seleccionar boletos </button>
              </div>
         </div>
     </div>

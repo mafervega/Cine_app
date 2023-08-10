@@ -17,23 +17,24 @@
         margin-left: 1rem;
     }
     span{
-        color: #888585; /* Color del texto */
+        color: #888585;
     }
     
 }
-.info{
-    display: flex;
-    align-items: center;
+.info{   
+     display: flex;
     justify-content: center;
     flex-direction: column;
+
    span{
     color: #888585; 
    }
 
 .horario_info{
-    display: flex;
-    justify-content: space-around;
-    margin: 1.5rem;  
+ margin: 1.5rem;
+ display: flex;
+ justify-content: space-around;
+
   button{
     padding: 0 12px; 
     font-family: Roboto; 
@@ -60,5 +61,24 @@
     }
 }
 }
-
+}
+@media(max-width: 768px){
+    .detail{
+            flex-direction: column;
+    }
+    .peli{
+        width: 100% !important;
+        font-size: larger;
+        .peli_info{  
+            flex-direction: column;
+            img{
+                width: 50%;
+            }
+        }
+    }
+    .info{
+        align-items: center;
+        width: 100%;
+      
+    }
 }

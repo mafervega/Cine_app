@@ -7,6 +7,13 @@
     justify-content: space-around;
     color: aliceblue;
   }
+  .titulo{
+    margin-top: 1.3rem;
+    margin-left: 0.5rem;
+    width: 30%;
+    font-size: 25px;
+    
+  }
   .nav{
     margin: 20px;
     width: 100%;
@@ -19,7 +26,7 @@
     list-style: none;
     width: 100%;
     li { 
-    width: 100%;  
+    width: 50%;  
     height: 40px;
     background: #1C508DFF; 
     border-radius: 19px; 
@@ -29,39 +36,37 @@
       }
     }
   }
-  label{
-   color: #fff;
-  
-  }
-  select{
-     width: 150px; 
-     height: 25px; 
-     padding-left: 12px; 
-     padding-right: 34px; 
-     font-family: Roboto; 
-     font-size: 14px; 
-     background: #00000000; 
-     border-radius: 6px; 
-     border-width: 1px; 
-     border-color: #565D6DFF; 
-     outline: none; 
-    }
   input {
   color: #fff;
-   width: 150px; 
-   height: 25px; 
-   padding-left: 12px; 
+   width: 200px; 
+   height: 30px; 
+   padding-left: 20px; 
    padding-right: 34px; 
+   font-family: Roboto; 
+   font-size: 20px; 
+   background: #00000000; 
+   border-radius: 6rem; 
+   border-width: 1px; 
+   border-color: #565D6DFF; 
+  }
+  select{
+    margin-top: 0.5rem;
+    color: #fff;
+   width: 200px; 
+   height: 30px; 
    font-family: Roboto; 
    font-size: 14px; 
    background: #00000000; 
-   border-radius: 6px; 
-   border-width: 1px; 
+   border-radius: 6rem; 
    border-color: #565D6DFF; 
-   outline: none; 
   }
+  option{
+    color: black;
+  }
+  
   .textbox{
     margin: 10px;
+    color: #fff;
   }
   .textbox1{
     margin: 10px;
@@ -85,11 +90,9 @@
   .hamburguesa{
     display: flex;
     flex-direction: column;
-   margin-top: 10px;
-   margin-bottom:10px;
+       margin-top: 1.5rem;
    display: none;
        span{
-      
       background-color: #fff;
       display: block;
       width: 3rem;
@@ -98,27 +101,41 @@
       border-radius: 2rem;
        }
   }
-  
-  
-  
-  
-  
-  @media(max-width:768px){
-    .textbox{
+@media(max-width:768px){
+    header{
+      .titulo{
+        font-size: 30px;
+        margin-bottom: 1rem;
+      }
+      .nav{
+         display: none;
+        ul{
+          display: flex;
+          flex-direction: column;
+          li{
+            width: 100%;
+            text-align: center;
+            margin-right: 0px;
+            padding: 20px 0;
+          }
+        }
+      }
+      .textbox{
+        display: none;
+      }
+      .textbox1{
+        display: none;
+      }
+    .user{
       display: none;
     }
-    .textbox1{
-      display: none;
+   
+    .hamburguesa{
+    display: block;
+
     }
-  .user{
-    display: none;
-  }
-  .nav{
-    display: none;
-  }
-  .hamburguesa{
-  display: block;
-  }
+    }
+   
   }
   
   

@@ -3,6 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Layout from "../components/layout/layout"
 import Characters from "../components/characters/Characters"
 import Detail from '../components/detail/Detail'
+import Boletos from '../components/boletos/Boletos'
+import Sillas from '../components/sillas/Sillas'
 
 
 const Router = () => {
@@ -25,7 +27,8 @@ const Router = () => {
             <Route path="/" element={<Layout/>}>
                 <Route index element={<Characters characters={characters} />}/>
                 <Route path='/:idMovie' element={<Detail/>}/>
-                {/* <Route path=':id' element={<Detalle/>}/> */}
+                <Route path='/:idMovie/:idMovie' element={<Boletos/>}/>
+                <Route path='/:idMOvie/:idMovie/:idmovie' element={<Sillas/>}/>
             </Route>
         </Routes>
        

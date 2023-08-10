@@ -1,4 +1,4 @@
-import React from 'react'
+import { Link } from 'react-router-dom';
 import './style.scss'
 
 
@@ -11,8 +11,8 @@ const Navbar = () => {
     <header>
         <div className="titulo">
              CINE COLOMBIA
-        </div>
-        
+           
+        </div>  
         <div className="nav" >
             <ul>
                 <li>Accion</li>
@@ -23,13 +23,12 @@ const Navbar = () => {
         </div>
     
         <div className="textbox"> 
-        <label  className="form-label"> </label>   
              <span>Cines</span>
                  <select value="" className="form-select" aria-label="Default select example">
                      <option value="">Selecciona una opciòn</option>
-                     <option value="m">3</option>
-                     <option value="f">2</option>
-                     <option value="i">1</option>
+                     <option value="3">Cine Mark</option>
+                     <option value="2">Cine de Mafer</option>
+                     <option value="1">cosas</option>
                 </select>
          </div>
     

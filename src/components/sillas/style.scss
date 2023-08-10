@@ -1,0 +1,59 @@
+.sillas{
+    .silla{
+        background-color: aqua;
+    }
+    .info_{
+        
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 1rem;
+        margin:5rem ;
+    
+        .info{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .info_img{
+                border: 1px solid black;
+                border-radius: 10rem;
+                background-color: #d1d1d1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 2rem;
+                img{
+                    width: 20%;
+                    border-radius: 1rem;
+                }
+                .info_info{
+                    margin-left: 1rem;
+                    margin-top: 1rem;
+    
+                    span{
+                        h5{
+                            color: black;
+                        }
+                        color: #888585; 
+                        width: 100%;
+                    }
+                }
+            }
+            
+         
+            .total{
+                display: flex;
+                justify-content: space-between;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 3rem;
+                width: 50%;
+            }  
+    }
+   
+    }
+
+}
+   
